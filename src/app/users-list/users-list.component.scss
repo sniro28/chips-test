@@ -1,0 +1,7 @@
+.mat-standard-chip {
+  background-color: green;
+
+  &.mat-chip-disabled {
+    background-color: #e0e0e0;
+  }
+}

@@ -1,0 +1,9 @@
+<mat-chip-list>
+  <mat-chip *ngFor="let user of usersList"
+    [removable]="user.enabled"
+    [disabled]="!user.enabled"
+    (removed)="onRemoved(user)">
+    {{user.firstName}}
+    <mat-icon matChipRemove *ngIf="user.enabled">cancel</mat-icon>
+  </mat-chip>
+</mat-chip-list>
